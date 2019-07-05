@@ -2,7 +2,6 @@ package com.ss.springboot.cities.utils;
 
 import com.ss.springboot.cities.City;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 

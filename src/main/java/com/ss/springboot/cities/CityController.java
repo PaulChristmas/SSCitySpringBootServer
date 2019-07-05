@@ -1,7 +1,6 @@
 package com.ss.springboot.cities;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ss.springboot.cities.utils.JSONCityResponse;
 import com.ss.springboot.cities.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +31,6 @@ public class CityController {
         String result;
         for(City city : cityRepository.findAll()){
             listCities.add(city);
-
         }
         result = listCities.isEmpty()? "City list is empty." : " Table contains " + listCities.size() + " cities";
         JSONCityResponse resp = new JSONCityResponse(true, result);
