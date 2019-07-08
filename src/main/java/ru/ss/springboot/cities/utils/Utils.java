@@ -1,4 +1,4 @@
-package com.ss.springboot.cities.utils;
+package ru.ss.springboot.cities.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -23,6 +23,7 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 
@@ -35,6 +36,12 @@ dependencies {
     runtime('no.bouvet:json-client:1.0.5')
     compile 'no.bouvet:json-client:1.0.5'
     compile 'org.javassist:javassist:3.18.2-GA'
+
+    compile 'com.ss.server:lib:1.0'
+    runtime('com.ss.server:lib:1.0')
+    
+    compileOnly 'org.projectlombok:lombok:1.18.4'
+    annotationProcessor 'org.projectlombok:lombok:1.18.4'
     
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     testCompile('org.springframework.boot:spring-boot-starter-test')

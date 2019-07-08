@@ -1,28 +1,27 @@
-package com.ss.springboot.cities.utils;
+package org.ss.server.lib;
 
-import com.ss.springboot.cities.City;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class JSONCityResponse {
+public class JSONTemplateResponse {
 
-    public JSONCityResponse() {
+    public JSONTemplateResponse() {
 
     }
 
     private boolean requestOk;
     private String responseContent;
 
-    public List<City> getCities() {
-        return cities;
+    public List<Object> getRecordList() {
+        return recordList;
     }
 
-    public void setCities(List<City> cities) {
-        this.cities = cities;
+    public void setRecordList(List<Object> recordList) {
+        this.recordList = recordList;
     }
 
-    private List<City> cities = new LinkedList<City>();
+    private List<Object> recordList = new LinkedList<Object>();
 
     public boolean isRequestOk() {
         return requestOk;
@@ -32,7 +31,7 @@ public class JSONCityResponse {
         this.requestOk = requestOk;
     }
 
-    public JSONCityResponse(boolean status, String responseContent) {
+    public JSONTemplateResponse(boolean status, String responseContent) {
         this.requestOk = status;
         this.responseContent = responseContent;
     }
