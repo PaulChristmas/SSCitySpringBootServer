@@ -11,6 +11,11 @@ buildscript {
     }
 }
 
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
